@@ -34,3 +34,7 @@
     background-color: gray;
     padding: 1px;
 }
+
+.calcExpression,.calcResult{
+    text-align: right;
+}
