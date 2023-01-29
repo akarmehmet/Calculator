@@ -16,33 +16,34 @@
         </div>
         <div class="buttons">
             <div class="buttonRow">
-                <p class="circleButton">AC</p>
-                <p class="circleButton">C</p>
-                <p class="circleButton">%</p>
-                <p class="circleButton">/</p>
+                <button class="circleButton" onclick="clearExpression()">AC</button>
+                <button class="circleButton" onclick="onRemoveButtonClick()">C</button>
+                <button class="circleButton" onclick="onExpressionButtonClick('%')">%</button>
+                <button class="circleButton" onclick="onExpressionButtonClick('/')">/</button>
             </div>
             <div class="buttonRow">
-                <p class="circleButton">7</p>
-                <p class="circleButton">8</p>
-                <p class="circleButton">9</p>
-                <p class="circleButton">+</p>
+                <button class="circleButton" onclick="onExpressionButtonClick('7')">7</button>
+                <button class="circleButton" onclick="onExpressionButtonClick('8')">8</button>
+                <button class="circleButton" onclick="onExpressionButtonClick('9')">9</button>
+                <button class="circleButton" onclick="onExpressionButtonClick('+')">+</button>
             </div>
             <div class="buttonRow">
-                <p class="circleButton">4</p>
-                <p class="circleButton">5</p>
-                <p class="circleButton">6</p>
-                <p class="circleButton">-</p>
+                <button class="circleButton" onclick="onExpressionButtonClick('4')">4</button>
+                <button class="circleButton" onclick="onExpressionButtonClick('5')">5</button>
+                <button class="circleButton" onclick="onExpressionButtonClick('6')">6</button>
+                <button class="circleButton" onclick="onExpressionButtonClick('-')">-</button>
             </div>
             <div class="buttonRow">
-                <p class="circleButton">1</p>
-                <p class="circleButton">2</p>
-                <p class="circleButton">3</p>
-                <p class="circleButton">*</p>
+                <button class="circleButton" onclick="onExpressionButtonClick('1')">1</button>
+                <button class="circleButton" onclick="onExpressionButtonClick('2')">2</button>
+                <button class="circleButton" onclick="onExpressionButtonClick('3')">3</button>
+                <button class="circleButton" onclick="onExpressionButtonClick('*')">*</button>
             </div>
             <div class="buttonRow">
-                <p class="circleButton">0</p>
-                <p class="circleButton">.</p>
-                <p class="circleButton" id="equalButton">=</p>
+                <button class="circleButton" onclick="onExpressionButtonClick('0')">0</button>
+                <button class="circleButton">.</button>
+                <button class="circleButton" id="equalButton" onclick="calculateExpression()">==</button>
+                
             </div>
         </div>
     </div>
